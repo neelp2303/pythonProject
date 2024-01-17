@@ -61,8 +61,23 @@ print("hello world")
 #     print(dictio[key])
 # print(dictio.items())
 
-#/---- lambda function
-def add(fx,a):
-    return 5+fx(a)
-cube = lambda a:a*a*a
-print(add(cube,5))
+# #/---- lambda function
+# def add(fx,a):
+#     return 5+fx(a)
+# cube = lambda a:a*a*a
+# print(add(cube,5))
+
+#/---- map,filter,reduce
+from functools import reduce
+l1=[1,2,3,4,5,6,7,8,9,10]
+li=list(map(lambda a:a*a,l1))
+print(li)
+
+def filterfunc(a):
+    return a>3
+
+newl=list(filter(filterfunc,l1))
+print(newl)
+
+reduceout=reduce(lambda a,b:a+b,l1)
+print(reduceout)
