@@ -83,13 +83,28 @@ print("hello world")
 # print(reduceout)
 
 #/---- Exception handling
-a=int(input("Enter a num"))
-try:
-    div=(15/a)
-    print(div)
-except ZeroDivisionError:
-    print("Divided by zero")
+# a=int(input("Enter a num"))
+# try:
+#     div=(15/a)
+#     print(div)
+# except ZeroDivisionError:
+#     print("Divided by zero")
+#
+# finally:
+#     print("Code executed")
 
-finally:
-    print("Code executed")
+#/---- OOPS
+#/-- class constructor
+class person:
+    name=""
+    age=0
+    def __init__(self,name,age):
+        self.name=name
+        self.age=age
+    def info(self):
+        print(f"Name is {self.name} and age is {self.age}")
 
+a=person("Neel",21)
+b=person("Apar",21)
+a.info()
+b.info()
