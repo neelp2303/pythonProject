@@ -42,6 +42,7 @@ print("----------------------------")
 copylist.reverse()
 Highest_Grade=copylist.pop()
 print(Highest_Grade)
+copylist.append(Highest_Grade)
 
 #/--- Store results in text file
 # Open a text file in write mode
@@ -50,15 +51,17 @@ with open("Assignment1.txt", "w") as file:
     for student in average_grades:
         file.write(f"{student['name']} - Average Grade: {student['average_grade']:.2f}\n")
     file.write("\n\n------------------------\n")
-    file.write("Students in desc form\n")
-    average_grades.reverse()
-    for student in average_grades:
-        file.write(f"{student['name']} - Average Grade: {student['average_grade']:.2f}\n")
-    file.write("\n\n------------------------\n")
     file.write("Students having more than 85\n")
     for student in average_grades:
         if student['average_grade'] > 85:
             file.write(f"{student['name']} - Average Grade: {student['average_grade']:.2f}\n")
     file.write("\n\n------------------------\n")
+    file.write("Students in desc form\n")
+    sorted_students.reverse()
+    for student in sorted_students:
+        file.write(f"{student['name']} - Average Grade: {student['average_grade']:.2f}\n")
+    file.write("\n\n------------------------\n")
+
+
     file.write("Student with highest grade\n")
     file.write(f"{Highest_Grade}")
