@@ -30,6 +30,16 @@ print("hello world")
 #     i +=1
 
 #FStrings
-st="Hello {}"
-name =input("Enter name")
-print(f"Hello {name}")
+# st="Hello {}"
+# name =input("Enter name")
+# print(f"Hello {name}")
+
+#Functions and recursion
+def factorial(a):
+    if (a==0 or a==1):
+        return (a)
+    else:
+        return (a * factorial(a-1))
+
+fact=factorial(5)
+print(fact)
