@@ -53,3 +53,10 @@ print("hello world")
 # print(s1.union(s2))
 # s1.update(s2)
 # print(s1)
+
+#/---- Dictionary
+dictio={1:"Neel",2:"Apar",3:"Nishil"}
+print(dictio.keys())
+for key in dictio.keys():
+    print(dictio[key])
+print(dictio.items())
