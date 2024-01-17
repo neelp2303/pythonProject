@@ -55,8 +55,14 @@ print("hello world")
 # print(s1)
 
 #/---- Dictionary
-dictio={1:"Neel",2:"Apar",3:"Nishil"}
-print(dictio.keys())
-for key in dictio.keys():
-    print(dictio[key])
-print(dictio.items())
+# dictio={1:"Neel",2:"Apar",3:"Nishil"}
+# print(dictio.keys())
+# for key in dictio.keys():
+#     print(dictio[key])
+# print(dictio.items())
+
+#/---- lambda function
+def add(fx,a):
+    return 5+fx(a)
+cube = lambda a:a*a*a
+print(add(cube,5))
