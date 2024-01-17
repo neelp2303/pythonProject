@@ -68,16 +68,28 @@ print("hello world")
 # print(add(cube,5))
 
 #/---- map,filter,reduce
-from functools import reduce
-l1=[1,2,3,4,5,6,7,8,9,10]
-li=list(map(lambda a:a*a,l1))
-print(li)
+# from functools import reduce
+# l1=[1,2,3,4,5,6,7,8,9,10]
+# li=list(map(lambda a:a*a,l1))
+# print(li)
+#
+# def filterfunc(a):
+#     return a>3
+#
+# newl=list(filter(filterfunc,l1))
+# print(newl)
+#
+# reduceout=reduce(lambda a,b:a+b,l1)
+# print(reduceout)
 
-def filterfunc(a):
-    return a>3
+#/---- Exception handling
+a=int(input("Enter a num"))
+try:
+    div=(15/a)
+    print(div)
+except ZeroDivisionError:
+    print("Divided by zero")
 
-newl=list(filter(filterfunc,l1))
-print(newl)
+finally:
+    print("Code executed")
 
-reduceout=reduce(lambda a,b:a+b,l1)
-print(reduceout)
