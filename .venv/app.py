@@ -1,6 +1,19 @@
 print("hello world")
-patient="Neel"
-type="new"
-print(patient,type)
-age=input("Enter your birth year :" )
-print(2024-int(age))
+# patient="Neel"
+# type="new"
+# print(patient,type)
+# age=input("Enter your birth year :" )
+# print(2024-int(age))
+# Code for calculator program
+num1=int(input("Enter a num : "))
+num2=int(input("Enter a num : "))
+option = int(input("Enter option 1-add \n2-sub \n3-mul \n4-div "))
+if option==1:
+    print(num2+num1)
+elif option==2:
+    print(num2-num1)
+elif option==3:
+    print(num2*num1)
+elif option==4:
+    print(num2/num1)
+else:print("Enter valid number")
