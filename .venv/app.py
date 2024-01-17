@@ -5,15 +5,31 @@ print("hello world")
 # age=input("Enter your birth year :" )
 # print(2024-int(age))
 # Code for calculator program
-num1=int(input("Enter a num : "))
-num2=int(input("Enter a num : "))
-option = int(input("Enter option 1-add \n2-sub \n3-mul \n4-div "))
-if option==1:
-    print(num2+num1)
-elif option==2:
-    print(num2-num1)
-elif option==3:
-    print(num2*num1)
-elif option==4:
-    print(num2/num1)
-else:print("Enter valid number")
+# num1=int(input("Enter a num : "))
+# num2=int(input("Enter a num : "))
+# option = int(input("Enter option 1-add \n2-sub \n3-mul \n4-div "))
+# if option==1:
+#     print(num2+num1)
+# elif option==2:
+#     print(num2-num1)
+# elif option==3:
+#     print(num2*num1)
+# elif option==4:
+#     print(num2/num1)
+# else:print("Enter valid number")
+
+#for loop,while loop,lists
+# num=[1,2,3]
+# num.reverse()
+# print(num)
+# # for item in range(10):
+# #     print(item * "*")
+# i=0
+# while i<len(num):
+#     print(num[i])
+#     i +=1
+
+#FStrings
+st="Hello {}"
+name =input("Enter name")
+print(f"Hello {name}")
