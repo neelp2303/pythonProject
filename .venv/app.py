@@ -95,16 +95,28 @@ print("hello world")
 
 #/---- OOPS
 #/-- class constructor
-class person:
-    name=""
-    age=0
-    def __init__(self,name,age):
-        self.name=name
-        self.age=age
-    def info(self):
-        print(f"Name is {self.name} and age is {self.age}")
+# class person:
+#     name=""
+#     age=0
+#     def __init__(self,name,age):
+#         self.name=name
+#         self.age=age
+#     def info(self):
+#         print(f"Name is {self.name} and age is {self.age}")
+#
+# a=person("Neel",21)
+# b=person("Apar",21)
+# a.info()
+# b.info()
 
-a=person("Neel",21)
-b=person("Apar",21)
-a.info()
-b.info()
+#/-- Decorators
+def greet(fx):
+    def mfx(*args,**kwargs):
+        print("Hello")
+        fx(*args,**kwargs)
+        print(("thank you"))
+    return mfx
+@greet
+def add(a,b):
+    print(a+b)
+add(5,2)
