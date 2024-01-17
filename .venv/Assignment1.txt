@@ -1,0 +1,47 @@
+Average Grades of all students
+
+Shivang - Average Grade: 76.20
+Naman - Average Grade: 74.60
+Varana - Average Grade: 80.80
+Triparna - Average Grade: 80.00
+Apar - Average Grade: 86.20
+Kevin - Average Grade: 70.60
+Nishil - Average Grade: 86.20
+Mahmad - Average Grade: 82.60
+Kush - Average Grade: 71.00
+Mridul - Average Grade: 80.60
+Riya - Average Grade: 86.00
+Dhruv - Average Grade: 82.20
+Rudra - Average Grade: 84.60
+Neel - Average Grade: 86.60
+
+
+------------------------
+Students in desc form
+Neel - Average Grade: 86.60
+Rudra - Average Grade: 84.60
+Dhruv - Average Grade: 82.20
+Riya - Average Grade: 86.00
+Mridul - Average Grade: 80.60
+Kush - Average Grade: 71.00
+Mahmad - Average Grade: 82.60
+Nishil - Average Grade: 86.20
+Kevin - Average Grade: 70.60
+Apar - Average Grade: 86.20
+Triparna - Average Grade: 80.00
+Varana - Average Grade: 80.80
+Naman - Average Grade: 74.60
+Shivang - Average Grade: 76.20
+
+
+------------------------
+Students having more than 85
+Neel - Average Grade: 86.60
+Riya - Average Grade: 86.00
+Nishil - Average Grade: 86.20
+Apar - Average Grade: 86.20
+
+
+------------------------
+Student with highest grade
+{'name': 'Neel', 'average_grade': 86.6}
