@@ -110,13 +110,13 @@ print("hello world")
 # b.info()
 
 #/-- Decorators
-def greet(fx):
-    def mfx(*args,**kwargs):
-        print("Hello")
-        fx(*args,**kwargs)
-        print(("thank you"))
-    return mfx
-@greet
-def add(a,b):
-    print(a+b)
-add(5,2)
+# def greet(fx):
+#     def mfx(*args,**kwargs):
+#         print("Hello")
+#         fx(*args,**kwargs)
+#         print(("thank you"))
+#     return mfx
+# @greet
+# def add(a,b):
+#     print(a+b)
+# add(5,2)
