@@ -109,7 +109,7 @@ print("hello world")
 # a.info()
 # b.info()
 
-#/-- Decorators
+#/---- Decorators
 # def greet(fx):
 #     def mfx(*args,**kwargs):
 #         print("Hello")
@@ -120,3 +120,36 @@ print("hello world")
 # def add(a,b):
 #     print(a+b)
 # add(5,2)
+
+#/---- Threading
+import threading
+import time
+from concurrent.futures import ThreadPoolExecutor
+
+def fun(sec):
+    print(f"this is {sec} ")
+    time.sleep(sec)
+# time1=time.perf_counter()
+# t1=threading.Thread(target=fun,args=[4])
+# t2=threading.Thread(target=fun,args=[2])
+# t3=threading.Thread(target=fun,args=[5])
+#
+# t1.start()
+# t2.start()
+# t3.start()
+#
+# t1.join()
+# t2.join()
+# t3.join()
+# time2=time.perf_counter()
+# time3=time2-time1
+# print("\n"+str(time3))
+
+def pooling():
+    with ThreadPoolExecutor() as exe:
+        # exe1=exe.submit(fun,4)
+        # exe2=exe.submit(fun,2)
+        # exe3=exe.submit(fun,1)
+        li=[1,2,3,4,5]
+        exe4=exe.map(fun,li)
+pooling()
